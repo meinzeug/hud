@@ -1,124 +1,105 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>meinzeug HUD – Kostenloses Self‑Hosting‑Labor</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-</head>
-<body>
-  <header class="nav-container">
-    <div class="logo">
-      <span class="logo-icon">■</span>
-      <span class="logo-text">meinzeug HUD</span>
-    </div>
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#ueber">Über</a></li>
-        <li><a href="#logbuch">Logbuch</a></li>
-      </ul>
-    </nav>
-    <a href="#" class="btn btn-cta">Kostenlos anmelden</a>
-  </header>
+# meinzeug HUD
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>meinzeug HUD – kostenloses Self‑hosting‑Labor</h1>
-        <p>
-          Dieses Projekt verbindet deine eigenen Hosts, Tokens und Repositories mit einem HUD,
-          das ausschließlich dir gehört. Kein Verkauf, keine Pläne, keine Werbung – nur ein privates
-          Hobby für Menschen, die Self‑hosting üben wollen.
-        </p>
-        <div class="framework-icons">
-          <i class="bi bi-bootstrap"></i>
-          <i class="bi bi-journal-code"></i>
-          <i class="bi bi-lightning"></i>
-          <i class="bi bi-lock"></i>
-        </div>
-        <a href="#" class="btn btn-primary">Kostenlos registrieren →</a>
-      </div>
-      <div class="hero-image">
-        <img src="./assets/img/hud-screenshot.png" alt="HUD Dashboard" />
-      </div>
-    </section>
+[![Status: Prototyp](https://img.shields.io/badge/status-prototype-orange.svg)](#projekt-logbuch)
+[![Focus: Self-hosting](https://img.shields.io/badge/focus-self--hosting-blue.svg)](#werte--prinzipien)
+[![License: TBD](https://img.shields.io/badge/license-tbd-lightgrey.svg)](#lizenz)
 
-    <section id="ueber" class="features">
-      <h2>Über meinzeug HUD</h2>
-      <p class="subtitle">
-        Dieses HUD ist ein unentgeltliches Hobby‑Projekt. Es richtet sich an Menschen,
-        die ihre Infrastruktur verstehen wollen, ohne etwas kaufen oder verkaufen zu müssen.
-      </p>
-      <div class="features-grid">
-        <div class="feature">
-          <i class="bi bi-house-lock"></i>
-          <h3>Privates HUD</h3>
-          <p>meinzeug HUD läuft nur auf eigenen Maschinen. Keine fremden Tenants, kein bezahltes Hosting.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-gear"></i>
-          <h3>Setup nach Bedarf</h3>
-          <p>SSH, Hetzner oder AWS lassen sich binden, bleiben aber vollständig in deinem Besitz.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-lightning-charge"></i>
-          <h3>Manueller Trigger</h3>
-          <p>Aktionen werden bewusst ausgelöst – kein Verkauf von Automationen, nur Experimentierfläche.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-key"></i>
-          <h3>Schlüssel im Tresor</h3>
-          <p>Secrets werden clientseitig verschlüsselt und können jederzeit gelöscht werden.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-chat-dots"></i>
-          <h3>Kleine Runde</h3>
-          <p>Community‑Presets entstehen in privaten Chats. Keine öffentlichen Bundle‑Angebote.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-envelope"></i>
-          <h3>Direkter Kontakt</h3>
-          <p>Fragen laufen per E‑Mail oder Matrix – Support ist freiwillig und unentgeltlich.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-flask"></i>
-          <h3>Experimente</h3>
-          <p>Neue Nodes oder APIs werden als Hobby integriert, ohne Garantie oder SLA.</p>
-        </div>
-        <div class="feature">
-          <i class="bi bi-keyboard"></i>
-          <h3>HUD Shortcuts</h3>
-          <p>Command Palette & Hotkeys bleiben erhalten und lassen sich lokal anpassen.</p>
-        </div>
-      </div>
-    </section>
+> Privates HUD-Labor zum Verbinden deiner eigenen Hosts, Tokens und Repositories, ohne Werbung, Bezahlschranken oder fremde Tenants.
 
-    <section id="logbuch" class="logbook">
-      <h2>Projekt‑Logbuch</h2>
-      <p class="subtitle">Transparente Updates über neue Experimente, Sicherheitsnotizen und rechtliche Hinweise.</p>
-      <div class="logbook-content">
-        <article class="log-entry">
-          <h3>Erster Prototyp veröffentlicht</h3>
-          <p class="meta">16. Juli 2025</p>
-          <p>Wir haben den ersten Prototyp unseres HUD Dashboards live gestellt und sammeln erstes Feedback.</p>
-        </article>
-        <article class="log-entry">
-          <h3>Start des Community‑Programms</h3>
-          <p class="meta">3. August 2025</p>
-          <p>Ab sofort können interessierte Entwickler:innen Presets in unserem Matrix‑Chat teilen.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+**Kurz gesagt**
+- kostenloses Hobby-Projekt mit Fokus auf Lern- und Experimentier-Workflows
+- alle Secrets bleiben bei dir; der Code läuft nur auf deinen Maschinen
+- kleine Community, direkter Austausch via Mail oder Matrix (nach Einladung)
 
-  <footer class="footer">
-    <p>© 2025 meinzeug HUD – Dieses Projekt ist ein Hobby und steht nicht zum Verkauf.</p>
-  </footer>
-</body>
-</html>
+## Inhaltsverzeichnis
+1. [Über das Projekt](#über-das-projekt)
+2. [Repository-Überblick](#repository-überblick)
+3. [Feature-Highlights](#feature-highlights)
+4. [Werte & Prinzipien](#werte--prinzipien)
+5. [Schnellstart](#schnellstart)
+6. [Projekt-Logbuch](#projekt-logbuch)
+7. [Roadmap](#roadmap)
+8. [Mitwirken](#mitwirken)
+9. [Support & Kontakt](#support--kontakt)
+10. [Lizenz](#lizenz)
+
+## Über das Projekt
+meinzeug HUD ist ein persönliches Self-hosting-Labor, das ein zentrales Dashboard (HUD) mit deinen eigenen Ressourcen verbindet. Das Ziel ist es, Infrastruktur zu verstehen, Presets zu testen und Integrationen bewusst zu steuern statt Automationen zu verkaufen. Alles läuft lokal oder auf Servern, die dir gehören.
+
+## Repository-Überblick
+```
+.
+├── assets
+│   ├── css
+│   │   └── style.css        # zentrales Styling für das HUD
+│   └── img
+│       └── favicon.png      # Icon für Browser & PWA
+├── index.html               # Landing-Page/Mockup für das HUD
+└── README.md                # Projektbeschreibung (diese Datei)
+```
+
+## Feature-Highlights
+- **Privates HUD** – läuft ausschließlich auf selbst verwalteten Maschinen.
+- **Setup nach Bedarf** – verbindet SSH, Hetzner, AWS oder andere Provider, ohne Ownership abzugeben.
+- **Manuelle Trigger** – Aktionen starten nur, wenn du sie auslöst; keine versteckten Chronjobs.
+- **Secret Tresor** – Schlüssel werden clientseitig verschlüsselt und lassen sich jederzeit löschen.
+- **Human-Scale Community** – Presets entstehen in kleinen Chats, nicht in öffentlichen Bundle-Stores.
+- **Direkter Kontakt** – Support erfolgt freiwillig per Mail oder Matrix.
+- **Experimentiermodus** – neue Nodes/APIs kommen als Hobby-Features ohne SLA hinzu.
+- **HUD Shortcuts** – Command Palette und Hotkeys bleiben lokal anpassbar.
+
+## Werte & Prinzipien
+1. **Kein Verkauf** – es gibt keine Pläne, Stores oder Werbung.
+2. **Eigenes Eigentum** – jede Ressource bleibt unter deiner Kontrolle.
+3. **Transparenz** – Logbuch-Updates dokumentieren Experimente, Security Notes und rechtliche Hinweise.
+4. **Privatsphäre zuerst** – keine zentrale Telemetrie; Logs bleiben in deinen Systemen.
+5. **Lernorientiert** – jede Änderung soll dokumentiert und reproduzierbar sein.
+
+## Schnellstart
+### 1. Repository klonen
+```bash
+git clone https://github.com/<dein-user>/hud.git
+cd hud
+```
+
+### 2. Statische Landing-Page ansehen
+```bash
+# beliebigen lokalen Static-Server starten
+python -m http.server 4173
+# oder
+npx serve .
+```
+Öffne danach `http://localhost:4173/index.html`, um das HUD-Mockup inklusive Styles zu prüfen.
+
+### 3. Eigene Presets dokumentieren
+- Passe Inhalte in `index.html` an oder lege weitere Module im Ordner `assets/` ab.
+- Nutze Issues oder das Logbuch im README, um Experimente nachvollziehbar zu halten.
+
+## Projekt-Logbuch
+| Datum        | Ereignis                         | Notizen |
+|--------------|----------------------------------|---------|
+| 16. Juli 2025 | Erster Prototyp veröffentlicht   | HUD-Dashboard ging intern live; frühes Feedback läuft. |
+| 3. August 2025 | Start des Community-Programms   | Matrix-Chat geöffnet, Presets können geteilt werden. |
+
+## Roadmap
+- [x] Prototyp V1 online bringen (Juli 2025)
+- [x] Community-Programm aufsetzen (August 2025)
+- [ ] Secrets-Vault mit Hardware-Keys testen
+- [ ] Self-hosting Installer (Ansible/Taskfile)
+- [ ] Öffentliche Demo ohne Login bereitstellen
+- [ ] Beta-Release mit dokumentierter API
+
+## Mitwirken
+1. **Issues** – nutze GitHub Issues für Bug-Reports, Security-Hinweise oder Ideen.
+2. **Fork & Branch** – erstelle einen Fork, arbeite auf einem beschreibenden Branch (`feature/hud-shortcuts`).
+3. **Style-Guides** – halte dich an das bestehende CSS und dokumentiere neue Komponenten direkt im README.
+4. **Pull Request** – beschreibe, warum die Änderung nötig ist, welche Risiken bestehen und wie getestet wurde.
+5. **Security-Disclosure** – melde potenzielle Schwachstellen nicht öffentlich, sondern per Direktkontakt.
+
+## Support & Kontakt
+- **E-Mail** – auf Anfrage (siehe Issues); kein offizieller Helpdesk, Support ist freiwillig.
+- **Matrix** – Einladungslink wird individuell geteilt, sobald du Teil der kleinen Runde wirst.
+- **Issues** – nutze GitHub, wenn du Feedback öffentlich dokumentieren möchtest.
+
+## Lizenz
+Es wurde noch keine Open-Source-Lizenz ausgewählt. Nutze den Code daher nur privat und frage vorher nach, wenn du Teile wiederverwenden möchtest.
